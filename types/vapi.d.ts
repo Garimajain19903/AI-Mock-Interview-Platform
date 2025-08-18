@@ -1,3 +1,11 @@
+import "@vapi-ai/web";
+
+declare module "@vapi-ai/web" {
+  interface AssistantOverrides {
+    audioElement?: HTMLAudioElement;
+  }
+}
+
 enum MessageTypeEnum {
   TRANSCRIPT = "transcript",
   FUNCTION_CALL = "function-call",
